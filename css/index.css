@@ -1,0 +1,271 @@
+body {
+  font-family: roboto,sans-serif;
+  color: #545e6c;
+  background: #f5f5f5;
+  font-size: 14px;
+  padding: 30px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700
+}
+a {
+  color: #2d7788;
+}
+a:hover {
+  text-decoration: underline;
+  color: #1a454f
+}
+a:focus {
+  text-decoration: none
+}
+p {
+  line-height: 1.5;
+}
+ul,li{
+  list-style: none;
+}
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  background: #42a8c0;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  position: relative;
+}
+.sidebar-wrapper{
+  background: #42a8c0;
+  position: absolute;
+  right: 0;
+  width: 280px;
+  height: 100%;
+  min-height: 800px;
+  color: #fff;
+}
+.sidebar-wrapper .profile-container{
+  padding: 30px;
+  background: rgba(0,0,0,.2);
+  text-align: center;
+}
+.sidebar-wrapper .avatar{
+  max-width: 100px;
+  margin-bottom: 15px;
+  border: 0 solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0 , 0, .1)
+}
+
+.profile-container > h1{
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.profile-container > h3 {
+  color: rgba(255, 255, 255, .6);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact-container{
+  padding: 30px;
+}
+.contact-container ul {
+  padding: 0;
+  margin: 0;
+}
+.contact-container li {
+  margin-bottom: 15px;
+  vertical-align: center;
+}
+.contact-container li svg{
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: .5em;
+}
+
+.education-container{
+  padding: 30px;
+
+}
+.education-container h2{
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.education-container .edu-information h4{ 
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.education-container .edu-information h5,
+.education-container .edu-information .time
+{ 
+  color: rgba(255,255,255,.6);
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.main-wrapper{
+  background: #fff;
+  padding: 60px;
+  padding-right: 340px;
+}
+.main-wrapper section{
+  margin-bottom: 60px;
+}
+
+.skill-section h2{
+  font-size: 20px;
+  color: #2d7788;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.skill-section .summary{
+  margin-left: 1em;
+}
+
+.project-section h2{
+  font-size: 20px;
+  color: #2d7788;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.project-section .item{
+  margin-bottom: 30px;
+  margin-left: 1em;
+}
+.project-section .item .title{
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+ 
+}
+.project-section .item .title a ,
+.project-section .item .link a{
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.project-section .item .description{
+  margin-top: 10px;
+}
+.project-section .item .use-skills{
+  margin-bottom: 15px;
+}
+.project-section .item .description p ,
+.project-section .item .use-skills p
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.project-section .item .link div{
+  margin-bottom: 5px;
+}
+
+@media print {
+  @page {
+      size: A4
+  }
+
+  body {
+      font-size: 12pt;
+      color: #000;
+  }
+
+  img.avatar {
+      filter: grayscale(1);
+      -webkit-filter: greyscale(1)
+  }
+
+  .main-wrapper .time {
+      float: right;
+      color: #000!important;
+      -webkit-print-color-adjust: exact
+  }
+
+  .sidebar-wrapper {
+      position: static;
+      float: right;
+      width: 40%;
+      -webkit-print-color-adjust: exact
+  }
+
+  .remove-container.container-block {
+      display: none
+  }
+
+  footer {
+      display: none
+  }
+
+  .skillset .level-bar-inner {
+      background-color: #000!important;
+      -webkit-print-color-adjust: exact
+  }
+
+  *,:after,:before {
+    color: #000!important;
+    text-shadow: none!important;
+    background: 0 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important
+}
+
+a,a:visited {
+    text-decoration: underline
+}
+
+
+
+abbr[title]:after {
+    content: " (" attr(title) ")"
+}
+
+a[href^="javascript:"]:after,a[href^="#"]:after {
+    content: ""
+}
+
+blockquote,pre {
+    border: 1px solid #999;
+    page-break-inside: avoid
+}
+
+thead {
+    display: table-header-group
+}
+
+img,tr {
+    page-break-inside: avoid
+}
+
+img {
+    max-width: 100%!important
+}
+
+h2,h3,p {
+    orphans: 3;
+    widows: 3
+}
+
+h2,h3 {
+    page-break-after: avoid
+}
+
+.navbar {
+    display: none
+}
+
+.btn>.caret,.dropup>.btn>.caret {
+    border-top-color: #000!important
+}
+.project-section {
+  margin-top: 1cm;
+  width: 14cm;
+}
+.education-container .edu-information{
+  color: #000!important;
+}
+}
