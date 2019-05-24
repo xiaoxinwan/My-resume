@@ -1,166 +1,216 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <style type="text/css">
-    .icon {
-       width: 1em; height: 1em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-    }
-  </style>
-  <title>李新喜的简历</title>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="sidebar-wrapper">
-      <div class="profile-container">
-        <img class="avatar" src="./css/avatar.png" alt="个人头像">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>李新喜的简历</title>
+    <style type="text/css">
+      .icon {
+        width: 1.7em;
+        height: 1.7em;
+        vertical-align: -0.3em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout" id="page">
+      <header>
         <h1>李新喜</h1>
-        <h3>前端开发工程师</h3>
-      </div>
-      <div class="contact-container">
-        <ul class="contact-list">
-          <li class="phone">
-            <!-- 手机 -->
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-dianhua"></use>
-            </svg>
-            <span>13160672531</span>
-          </li>
-          <li class="email">
-            <!-- 邮件 -->
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-dianziyoujian"></use>
-            </svg>
-            <span>lixinxi1010@gmail.com</span>
-          </li>
-          <li class="wechat">
-            <!-- 微信 -->
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-weixin"></use>
-            </svg>
-            <span>xx1060980130</span>
-          </li>
-        </ul>
-      </div>
-      <div class="education-container">
-        <h2>教育经历</h2>
-        <div class="edu-information">
-          <h4>北京理工大学珠海学院</h4>
-          <h5>通信工程-本科</h5>
-          <div class="time">2013--2017</div>
+        <p>应聘前端开发工程师</p>
+      </header>
+      <aside>
+        <div class="avatar">
+          <img src="./css/avatar.png" alt="avatar" />
         </div>
-      </div>
-
-    </div>
-    <div class="main-wrapper">
-      <section class="skill-section">
-          <h2>个人技能</h2>
-          <div class="summary">
-            <p>HTML基础知识扎实，熟悉CSS选择器、盒模型、文档流，掌握常见的页面布局。</p>
-            <p>熟练掌握JavaScript知识，如数据类型、函数、异步、ES6等，使用原生JS操作DOM实现页面的交互。</p>
-            <p>熟练使用Ajax与后端交互，了解跨域的常用解决方案JSONP、CORS。</p>
-            <p>熟练使用JQuery，利用JQuery实现页面的交互和效果的实现。</p>
-            <p>熟悉使用REM，媒体查询、viewport等适配移动端。</p>
-            <p>熟悉Vue.js，熟练使用Vue常用的API，了解组件通信、生命周期、响应式原理，熟悉Vue的核心插件Vuex、Vue-Router。</p>
-            <p>熟悉Git版本工具、HTTP协议、Webpack。</p>
-          </div>
-      </section>
-      <section class="project-section">
-        <h2>项目经历</h2>
-        <div class="item">
-          <span class="title">
-            <a href="https://github.com/xiaoxinwan/music-163">网易云音乐Web</a>
-            </span>
-          <div class="description">
-            <strong>描述</strong>
-            <p>一款移动端音乐app，使用NeteaseCloudMusicApi网易云音乐NodeJS版API，ajax请求获取数据，渲染页面，实现了首页、歌单详情、音乐播放页面。音乐播放页使用原生HTML的audio实现点击暂停和点击播放。</p>
-          </div>
-          <div class="use-skills">
-            <strong>技术栈</strong>
-            <p>原生JavaScript，JQuery、ES6、Ajax</p>
-          </div>
-          <div class="link">
-            <div>
-              源码链接：<a href="https://github.com/xiaoxinwan/music-163">https://github.com/xiaoxinwan/music-163</a>
-            </div>
-            <div>
-              预览链接：<a href="https://github.com/xiaoxinwan/music-163">https://github.com/xiaoxinwan/music-163</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-            <span class="title">
-              <a href="https://github.com/xiaoxinwan/youzan">Vue重构有赞商城</a>
-              </span>
-            <div class="description">
-              <strong>描述</strong>
-              <p>重构有赞商城，本项目使用mock模拟数据，封装axios，以便于各页面的使用； 用Vue-Router实现了个人地址管理的跳转，用Vuex实现收货地址页面。还实现了购物车页面的单选或多选商品，结算等功能。基于组件化，开发footer组件和swiper组件，最后使用webpack实现打包。</p>
-            </div>
-            <div class="use-skills">
-              <strong>技术栈</strong>
-              <p>Vue、Vue-Router、Vuex、Vue Cli3、axios、swiper、mock、</p>
-            </div>
-            <div class="link">
-              <div>
-                源码链接：<a href="https://github.com/xiaoxinwan/youzan">https://github.com/xiaoxinwan/youzan</a>
-              </div>
-              <div>
-                预览链接：<a href="https://xiaoxinwan.github.io/youzan/youzan/">https://xiaoxinwan.github.io/youzan/youzan/</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-              <span class="title">
-                <a href="https://github.com/xiaoxinwan/cnode-community">CNODE论坛</a>
-                </span>
-              <div class="description">
-                <strong>描述</strong>
-                <p>Vue搭建的CNODE论坛，本项目调用cnode社区提供的API；封装axios来请求获取数据，使用Vue-Router实现路由的跳转，基于组件化模块化，实现了header、article、slidebar、postlist、userinfo、pagination六个组件。</p>
-              </div>
-              <div class="use-skills">
-                <strong>技术栈</strong>
-                <p>Vue、Vue-Router、ES6、axios、Scss</p>
-              </div>
-              <div class="link">
-                <div>
-                  源码链接：<a href="https://github.com/xiaoxinwan/cnode-community">https://github.com/xiaoxinwan/cnode-community</a>
-                </div>
-                <div>
-                  预览链接：<a href="https://xiaoxinwan.github.io/cnode-community/#/">https://xiaoxinwan.github.io/cnode-community/#/</a>
-                </div>
-              </div>
+        <section>
+          <h3>联系方式</h3>
+          <div class="contact">
+            <div class="item">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+              <span>13160672531</span>
             </div>
             <div class="item">
-                <span class="title">
-                  <a href="https://github.com/xiaoxinwan/xx-simple-ui">SimpleUI库</a>
-                  </span>
-                <div class="description">
-                  <strong>描述</strong>
-                  <p>一个基于Vue.js的简单UI库，实现了9个组件，分为基础类（icon、button、buttonGroup、input）和布局类（gird、layout、tabs、collapse、popover、toast）。本项目增加了我对slot、生命周期钩子、Vue插件的认识。</p>
-                </div>
-                <div class="use-skills">
-                  <strong>技术栈</strong>
-                  <p>Vue、Scss</p>
-                </div>
-                <div class="link">
-                  <div>
-                    源码链接：<a href="https://github.com/xiaoxinwan/music-163">https://github.com/xiaoxinwan/music-163</a>
-                  </div>
-                  <div>
-                    预览链接：<a href="https://github.com/xiaoxinwan/music-163">https://github.com/xiaoxinwan/music-163</a>
-                  </div>
-                </div>
-              </div>
-      </section>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+              <span>lixinxi1010@gmail.com</span>
+            </div>
+            <div class="item">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-wechat"></use>
+              </svg>
+              <span>xx1060980130</span>
+            </div>
+            <div class="item">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-city"></use>
+              </svg>
+              <span>江门</span>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>技能条</h3>
+          <div class="skills">
+            <div class="item">
+              <span class="keyword">HTML5</span>
+              <span class="rate">
+                <i style="width: 80%"></i>
+              </span>
+            </div>
+            <div class="item">
+              <span class="keyword">CSS3</span>
+              <span class="rate">
+                <i style="width: 70%"></i>
+              </span>
+            </div>
+            <div class="item">
+              <span class="keyword">Vue</span>
+              <span class="rate">
+                <i style="width: 70%"></i>
+              </span>
+            </div>
+          </div>
+        </section>
+      </aside>
+      <main>
+        <section>
+          <h3>关于我</h3>
+          <p>
+            掌握HTML基础知识，熟悉CSS盒模型、flex布局，能准确还原设计稿
+          </p>
+          <p>
+            掌握数据类型、闭包、原型等原生JS，熟悉ES6语法
+          </p>
+          <p>熟练使用AJAX进行数据交互，了解跨域的解决方案JSONP和CORS</p>
+          <p>熟悉Vue.js框架，熟练使用Vue 全家桶</p>
+          <p>熟悉HTTP协议，熟练使用 Git 进行代码管理和版本控制</p>
+          <p>了解打包工具 Webpack 配置</p>
+        </section>
+        <section>
+          <h3>教育经历</h3>
+          <h4>北京理工大学珠海学院</h4>
+          <span>本科/通信工程</span>
+        </section>
+        <section>
+          <h3>项目经历</h3>
+          <div class="item">
+            <h4>Simple UI库</h4>
+            <ul>
+              <li>
+                一个基于Vue.js的简单UI库，实现了9个组件，分为基础类（icon、button、buttonGroup、input）和布局类（gird、layout、tabs、collapse、popover、toast）。本项目增加了我对slot、生命周期钩子、Vue插件的认识。
+              </li>
+              <li>
+                技术栈：
+                <span>Vue</span>
+                <span>Sass</span>
+                <span>VuePress</span>
+              </li>
+              <li>
+                项目源码：https://github.com/xiaoxinwan/xx-simple-ui
+              </li>
+              <li>
+                预览链接：<a href="https://xiaoxinwan.github.io/xx-simple-ui/"
+                  >请点击查看</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <h4>CNODE论坛</h4>
+            <ul>
+              <li>
+                Vue搭建的CNODE论坛，本项目调用cnode社区提供的API；封装axios来请求获取数据，使用vue-router实现路由的跳转，基于组件模块化，实现了header、article、slidebar、postlist、userinfo、pagination六个组件。
+              </li>
+              <li>
+                技术栈：
+                <span>Vue</span>
+                <span>Sass</span>
+                <span>Vue-Router</span>
+                <span>axios</span>
+                <span>ES6</span>
+              </li>
+              <li>
+                项目源码：https://github.com/xiaoxinwan/cnode-community
+              </li>
+              <li>
+                预览链接：<a
+                  href="https://xiaoxinwan.github.io/cnode-community/#/"
+                  >请点击查看</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <h4>Vue 购物商城</h4>
+            <ul>
+              <li>
+                一个移动端商城项目。本项目使用mock模拟数据，封装axios，以便于各页面的使用；
+                用Vue-Router实现了个人地址管理的跳转，用Vuex实现收货地址页面。还实现了购物车页面的单选或多选商品，结算等功能。基于组件化，开发footer组件和swiper组件，最后使用webpack实现打包。
+              </li>
+              <li>
+                技术栈：
+                <span>Vue</span>
+                <span>Vue-Router</span>
+                <span>Vuex</span>
+                <span>axios</span>
+                <span>swiper</span>
+                <span>mock</span>
+              </li>
+              <li>
+                项目源码：https://github.com/xiaoxinwan/shopping-mall
+              </li>
+              <li>
+                预览链接：<a
+                  href="https://xiaoxinwan.github.io/shopping-mall/youzan"
+                  >请点击查看</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <h4>Vue Music</h4>
+            <ul>
+              <li>
+                一个基于Vue的移动端音乐App，利用qq音乐的api，通过jsonp和axios实现跨域，获取数据。实现了播放器内核、推荐页面、热榜页面、歌手页面、歌单详情、歌手详情、排行榜详情、搜索页面、播放列表、用户中心等等功能。
+              </li>
+              <li>
+                技术栈：
+                <span>Vue</span>
+                <span>vue-router</span>
+                <span>vuex</span>
+                <span>vue-lazyload</span>
+                <span>better-scroll</span>
+                <span>ES6</span>
+                <span>axios</span>
+              </li>
+              <li>
+                项目源码：https://github.com/xiaoxinwan/vue-music-play
+              </li>
+              <li>
+                预览链接：<a href="https://xiaoxinwan.github.io/vue-music-play/"
+                  >请点击查看</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h3>工作经历</h3>
+          <p>
+            本人于2017年9月开始，工作在新会圭峰山调频转播台，从事发射机的检修和维护。因为兴趣，在2018年中开始通过购买视频课程，查看MDN等，自学前端。
+          </p>
+        </section>
+      </main>
     </div>
-  </div>
-  <script src="//at.alicdn.com/t/font_1060248_tynogbo8t0n.js"></script>
-</body>
+    <script src="http://at.alicdn.com/t/font_1208171_swwwiit6hz.js
+    "></script>
+  </body>
 </html>
