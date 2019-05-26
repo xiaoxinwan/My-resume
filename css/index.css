@@ -99,7 +99,7 @@ ul > li > span {
   margin: 0 5px;
 }
 
-@media (max-width : 768px) {
+@media (max-width: 768px) {
   .layout{
     width: 100vw;
   }
