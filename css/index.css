@@ -88,13 +88,42 @@ section .contact .item > span {
   vertical-align: middle;
 }
 
-li{
+li {
   margin-bottom: 8px;
 }
-ul > li > span{
+ul > li > span {
   background: #5c99ca;
   border-radius: 8px;
   padding: 2px 4px;
   color: white;
   margin: 0 5px;
+}
+
+@media (max-width : 768px) {
+  .layout{
+    width: 100vw;
+  }
+  #page{
+    margin-top: 0;
+  }
+  header{
+    padding-bottom: 90px;
+  }
+  aside {
+    width: 100%;
+    border-right: none;
+    padding-top: 0;
+  }
+  aside .avatar img{
+    width: 100px;
+    height: 100px;
+  }
+}
+@media print {
+  #skills{
+    display: none;
+  }
+  #printskill{
+    margin-top: 20px;
+  }
 }
